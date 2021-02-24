@@ -82,7 +82,7 @@ jobs:
             ..
             $(Generator)
             -Wno-dev -Wno-deprecated
-            -DFetpapi-DIR=C:/fetpapi-install/lib/cmake/Fetpapi
+            -DFetpapi_DIR=C:/fetpapi-install/lib/cmake/Fetpapi
             -DBoost_INCLUDE_DIR=$(BOOST_ROOT_1_72_0)/include
             -DAVRO_INCLUDE_DIR=$(Agent.TempDirectory)/avro-cpp-1.10.1-install/include
             -DAVRO_LIBRARY_RELEASE=$(Agent.TempDirectory)/avro-cpp-1.10.1-install/lib/avrocpp_s.lib

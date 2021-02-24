@@ -245,7 +245,7 @@ jobs:
             -Wno-dev -Wno-deprecated
             -DBoost_INCLUDE_DIR=$(BOOST_ROOT_1_72_0)/include
             -DAVRO_INCLUDE_DIR=$(Agent.TempDirectory)/avro-cpp-1.10.1-install/include
-            -DAVRO_LIBRARY_RELEASE=$(Agent.TempDirectory)/avro-cpp-1.10.1-install/lib/avrocpp_s.lib
+            -DAVRO_LIBRARY_RELEASE=$(Agent.TempDirectory)/avro-cpp-1.10.1-install/lib/libavrocpp_s.a
       - task: CMake@1
         displayName: "CMake build fetpapi"
         inputs:

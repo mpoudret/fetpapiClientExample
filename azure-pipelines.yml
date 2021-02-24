@@ -255,7 +255,7 @@ jobs:
         displayName: "CMake Install fetpapi"
         inputs:
           workingDirectory: $(Agent.TempDirectory)/fetpapi-build
-          cmakeArgs: --build . --target INSTALL
+          cmakeArgs: --build . --target install
           
       - task: CMake@1
         displayName: 'Configure fetpapiClientExample build'
